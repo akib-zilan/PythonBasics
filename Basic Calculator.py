@@ -1,22 +1,20 @@
-print("Select an Operation to Perform: ")
-print("1. ADD")
-print("2. SUBTRACT")
-print("3. MULTIPLY")
-print("4. DIVIDE")
-
+print("Enter Operation you want to perform (+,-,*,/) :")
 operation = input()
+num1 = float(input("Enter the frist number : "))
+num2 = float(input("Enter the second number : "))
 
-if operation == "1": 
-    # code for add
-    pass
-elif operation == "2":
-    # code for subtract
-    pass
-elif operation == "3":
-    # code for multiply
-    pass
-elif operation == "4":
-    # code for divide
-    pass
-else:
-    print("Invalid input")
+if operation == "+" :
+    result = num1 + num2
+elif operation == "-" :
+    result = num1 - num2
+elif operation == "*" :
+    result = num1 * num2
+elif operation == "/" :
+    result = num1 / num2
+else :
+    result = "None"
+
+if result is None :
+    print("Invalid")
+else : 
+    print(f"Your result is : {result}")
